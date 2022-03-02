@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    max-width: 850px;
+
+    overflow: hidden;
+    border-radius: .5em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.upper--title {
+    color: var(--cyan);
+    margin-top: 0;
+}
+
+.upper--subtitle {
+    color: var(--bright-yellow);
+    font-size: 1.2rem;
+}
+
+.second--title--number {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.second--title--monthly {
+    margin-top: 0;
+    margin-left: 1.6rem;
+    color: var(--light-gray);
+    opacity: .6;
+    align-self: center;
+}
+
+.second--title--monthly--group {
+    display: flex;
+    align-items: center;
+}
+
+.second--title--desc {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.signup--btn {
+    text-decoration: none;
+    background: var(--bright-yellow);
+    color: var(--light-gray);
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-radius: .35em;
+    margin: 1rem auto 1rem;
+}
+
+.upper--par {
+    color: var(--grayish-blue);
+    line-height: 1.6;
+    font-size: .85rem;
+}
+
+.first__third {
+    padding: 2rem 1.5rem;
+    background: white;
+}
+
+.second__third {
+    background: var(--cyan);
+    padding: .65rem 1.5rem;
+    color: var(--light-gray);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.third__third {
+    background: var(--cyan);
+    padding: .5rem 1.65rem;
+    margin-top: 0;
+    color: var(--light-gray);
+}
+
+.lower__text--title {
+    font-size: 1.2rem;
+}
+
+.lower__text--list {
+    list-style: none;
+
+    /* border: 1px solid black; */
+    padding-left: 0;
+}
+
+.lower__text--list a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.5;
+    color: var(--light-gray);
+}
+
+
+/* ======= media queries ===== */
+@media only screen and (min-width: 40rem) {  
+    .second__third__group {
+        display: flex;
+    }
+
+    .third__third {
+        padding-left: 5rem;
+    }
+
+    .lower__text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 50rem) {
+    .upper--title,
+    .second--title {
+        font-size: 2.3rem;
+    }
+
+    .upper--subtitle {
+        font-size: 2rem;
+    }
+
+    .upper--par {
+        font-size: 1.3rem;
+    }
+
+    .second--title--number {
+        font-size: 3rem;
+    }
+
+    .second--title--monthly {
+        font-size: 1.3rem;
+    }
+
+    .lower__text--title {
+        font-size: 2rem;
+    }
+
+    .lower__text--list a {
+        font-size: 1.1rem;
+    }
+}
+/* =========================== */
