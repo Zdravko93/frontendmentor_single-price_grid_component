@@ -148,35 +148,3 @@ body {
         flex-direction: column;
     }
 }
-
-@media only screen and (min-width: 50rem) {
-    .upper--title,
-    .second--title {
-        font-size: 2.3rem;
-    }
-
-    .upper--subtitle {
-        font-size: 2rem;
-    }
-
-    .upper--par {
-        font-size: 1.3rem;
-    }
-
-    .second--title--number {
-        font-size: 3rem;
-    }
-
-    .second--title--monthly {
-        font-size: 1.3rem;
-    }
-
-    .lower__text--title {
-        font-size: 2rem;
-    }
-
-    .lower__text--list a {
-        font-size: 1.1rem;
-    }
-}
-/* =========================== */
